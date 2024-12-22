@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+   <nav class="p-3 flex bg-white justify-between items-center">
+    <i class="fa-sharp-duotone fa-solid fa-image">
+        <span class="text-lg font-medium">A&C</span>
+    </i>
+
+    <div id="nav-menu" class="hidden md:flex gap-12">
+    <a href="#" class="font-medium hover:text-blue-600">Art</a>
+    <a href="#" class="font-medium hover:text-blue-600">Collection</a>
+    <a href="#" class="font-medium hover:text-blue-600">Pricing</a>
+    <a href="#" class="font-medium hover:text-blue-600">Contact Us</a>
+    <a href="#" class="font-medium hover:text-blue-600">About Us</a>
+
+    </div>
+
+    <button class="hidden md:flex gap-2 items-center border px-4 py-1 border-gray-300 rounded-lg">
+        <i class="fa-sharp-duotone fa-solid fa-snowflake"></i>
+        <span>product</span>
+    </button>
+
+    <button class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-red-900"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+       <div id="nav-bar" class="flex justify-between">
+        <i class="fa-sharp-duotone fa-solid fa-image">
+            <span class="text-lg font-medium">A&C</span>
+        </i>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-red-900"></i>
+        </button>
+       </div>
+
+       <div>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Art</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Collection</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Pricing</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Contact Us</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">About US</a>
+       </div>
+       <div class="h-[1px] bg-gray-400"></div>
+       <button class="w-full mt-5 hover:bg-green-200 flex gap-2 items-center border px-4 py-2 border-gray-300 rounded-lg">
+        <i class="fa-sharp-duotone fa-solid fa-snowflake"></i>
+        <span>product</span>
+    </button>
+
+    </div>
+   </nav>
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
