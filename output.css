@@ -661,6 +661,10 @@ video {
   grid-column-start: 2;
 }
 
+.float-start {
+  float: inline-start;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
@@ -1514,6 +1518,10 @@ video {
     padding-top: 6rem;
   }
 
+  .sm\:text-center {
+    text-align: center;
+  }
+
   .sm\:text-2xl\/9 {
     font-size: 1.5rem;
     line-height: 2.25rem;
@@ -1565,6 +1573,10 @@ video {
   .md\:object-center {
     -o-object-position: center;
        object-position: center;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 }
 
